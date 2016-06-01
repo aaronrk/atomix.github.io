@@ -15,7 +15,7 @@ Resources are created by simply using one of [`Atomix`][Atomix]'s `get*` methods
 DistributedMap<String, String> map = atomix.getMap("my-map").join();
 ```
 
-Atomix create a replicated [`StateMachine`][StateMachine] on each replica in the cluster. Operations performed on the resource are submitted as state changes to the cluster where they're replicated and persisted before being applied to the replicated state machine.
+Atomix creates a replicated [`StateMachine`][StateMachine] on each replica in the cluster. Operations performed on the resource are submitted as state changes to the cluster where they're replicated and persisted before being applied to the replicated state machine.
 
 Atomix provides a number of resource implementations for common distributed systems problems. The resources include:
 
